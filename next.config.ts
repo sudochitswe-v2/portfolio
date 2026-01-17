@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Disable image optimization for static export
   },
+  // Important: Set the basePath to your GitHub Pages URL path
+  // Replace with your actual repository name (update this to match your repo name)
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
   typescript: {
     ignoreBuildErrors: false, // Change this back to false to catch actual TypeScript errors
   },

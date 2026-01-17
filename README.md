@@ -80,6 +80,18 @@ npm run typecheck
 
 This project is configured for deployment to GitHub Pages using GitHub Actions.
 
+### Important Configuration
+
+Before deploying, you need to update the `basePath` in `next.config.ts` to match your repository name:
+
+1. Open `next.config.ts`
+2. Update the `basePath` and `assetPrefix` values to match your repository name:
+   ```ts
+   basePath: process.env.NODE_ENV === 'production' ? '/your-repository-name' : '',
+   assetPrefix: process.env.NODE_ENV === 'production' ? '/your-repository-name/' : '',
+   ```
+3. Replace `/your-repository-name` with the actual name of your GitHub repository
+
 ### Automatic Deployment
 
 1. Push your changes to the `main` branch
