@@ -60,7 +60,7 @@ To build the application for production:
 npm run build
 ```
 
-This will generate a static site in the `out` directory.
+With the `output: 'export'` configuration in `next.config.ts`, this will generate a static site in the `out` directory that is ready for deployment to GitHub Pages.
 
 ### Linting and Type Checking
 
