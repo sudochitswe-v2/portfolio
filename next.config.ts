@@ -1,4 +1,4 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -10,8 +10,8 @@ const nextConfig: NextConfig = {
   },
   // Important: Set the basePath to your GitHub Pages URL path
   // Replace with your actual repository name (update this to match your repo name)
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
+  basePath: '',
+  assetPrefix: '',
   typescript: {
     ignoreBuildErrors: false, // Change this back to false to catch actual TypeScript errors
   },
