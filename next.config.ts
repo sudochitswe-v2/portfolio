@@ -9,10 +9,10 @@ const nextConfig: NextConfig = {
     unoptimized: true, // Disable image optimization for static export
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false, // Change this back to false to catch actual TypeScript errors
   },
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false, // Change this back to false to catch actual ESLint errors
   },
 };
 
