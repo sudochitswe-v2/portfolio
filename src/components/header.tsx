@@ -16,7 +16,7 @@ export default function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <a href="#home" className="flex items-center gap-2">
           <Code2 className="h-6 w-6 text-primary" />
-          <span className="font-headline text-lg font-bold">Crafted Code</span>
+          <span className="font-headline text-lg font-bold"></span>
         </a>
 
         <div className="flex items-center gap-4">

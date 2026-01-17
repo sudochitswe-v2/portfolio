@@ -2,8 +2,8 @@ import { PROFILE_DATA } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Mail, Download, Briefcase } from 'lucide-react';
-
+import { Mail, Download, Briefcase, Linkedin } from 'lucide-react';
+import { SiGithub } from '@icons-pack/react-simple-icons';
 export default function Hero() {
   const profileImage = PlaceHolderImages.find(p => p.id === 'profile');
 
@@ -38,6 +38,18 @@ export default function Hero() {
               <Button asChild variant="outline" size="lg">
                 <a href="#projects">
                   <Briefcase className="mr-2 h-5 w-5" /> See My Work
+                </a>
+              </Button>
+            </div>
+            <div className="flex gap-4 pt-4">
+              <Button asChild variant="outline" size="icon">
+                <a href={PROFILE_DATA.socialLinks.github} target="_blank" rel="noopener noreferrer">
+                  <SiGithub color="currentColor" size={20} />
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="icon">
+                <a href={PROFILE_DATA.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+                  <Linkedin color="currentColor" size={20} />
                 </a>
               </Button>
             </div>

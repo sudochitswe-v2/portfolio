@@ -6,6 +6,10 @@ export const PROFILE_DATA = {
   contact: {
     email: 'chitswe.dev@gmail.com',
   },
+  socialLinks: {
+    linkedin: 'https://www.linkedin.com/in/sudochitswe',
+    github: 'https://github.com/sudochitswe-v2',
+  },
 };
 
 export const SKILLS_BY_LEVEL = {
@@ -88,10 +92,55 @@ export const PERSONAL_PROJECTS_DATA = [
   {
     id: 'personal-project-1',
     title: 'Kyi Poh',
-    description: 'Custom front door app using exposed movie APIs to fetch and display movie information.',
+    description: 'Custom front door movie streaming app using exposed movie APIs to fetch and display movie information.',
     technologies: ['React.js', 'JavaScript', 'CSS', 'HTML', 'Movie APIs'],
     githubUrl: 'https://github.com/sudochitswe-v2/front.door.pyaz',
     demoUrl: 'https://kyipoh.vercel.app',
+    imageUrl: undefined, // This would be your actual image,
+  },
+  {
+    id: 'personal-project-2',
+    title: 'TruthLine',
+    description: 'Websetite that provides verified news articles and fact-checking services to combat misinformation. (Hackathon Project)',
+    technologies: ['.NET MVC', 'Razor Pages', 'MariaDb', 'Bootstrap'],
+    githubUrl: 'https://github.com/sudochitswe-v2/TruthLine.infernov',
+    demoUrl: undefined,
+    imageUrl: undefined, // This would be your actual image
+  },
+  {
+    id: 'personal-project-3',
+    title: 'CSMF',
+    description: 'Web-based loan management system designed to streamline the operations of microfinance institutions.',
+    technologies: ['.NET MVC', 'Razor Pages', 'MariaDb', 'Bootstrap', 'Hangfire'],
+    githubUrl: 'https://github.com/sudochitswe-v2/CSMF',
+    demoUrl: undefined,
+    imageUrl: undefined, // This would be your actual image
+  },
+  {
+    id: 'personal-project-4',
+    title: 'Foodify',
+    description: 'online culinary platform that connects food enthusiasts and providing a space to explore, share, and discover diverse recipes and cooking tips.',
+    technologies: ['Laravel', 'Blade', 'PHP', 'MariaDb', 'Bootstrap'],
+    githubUrl: 'https://github.com/sudochitswe-v2/foodify-laravel',
+    demoUrl: undefined,
+    imageUrl: undefined, // This would be your actual image
+  },
+  {
+    id: 'personal-project-5',
+    title: 'Kfitness Web API',
+    description: 'A RESTful API for a fitness application that manages user workouts and progress tracking.',
+    technologies: ['PHP', 'MariaDb', 'Composer'],
+    githubUrl: 'https://github.com/sudochitswe-v2/kfitness',
+    demoUrl: undefined,
+    imageUrl: undefined, // This would be your actual image
+  },
+  {
+    id: 'personal-project-6',
+    title: 'Kfitness Mobile',
+    description: 'A fitness application written in native language that manages user workouts and progress tracking.',
+    technologies: ['Kotlin', 'Android Studio', 'Volley'],
+    githubUrl: 'https://github.com/sudochitswe-v2/KFitnessMobile',
+    demoUrl: undefined,
     imageUrl: undefined, // This would be your actual image
   }
 ];
