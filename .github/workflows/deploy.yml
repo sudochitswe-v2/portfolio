@@ -9,7 +9,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -24,7 +24,10 @@ jobs:
       run: npm ci
 
     - name: Build project
-      run: npm run build
+      run: |
+        npm run build
+        # Verify the out directory was created
+        ls -la out/
 
     # Add the output directory to the repository
     - name: Setup Pages
@@ -40,14 +43,3 @@ jobs:
       uses: actions/deploy-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        
-  # This job is used to trigger GitHub Pages deployment
-  deploy:
-    needs: build-and-deploy
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    
-    steps:
-    - name: Trigger GitHub Pages
-      run: |
-        echo "Deployment completed"
