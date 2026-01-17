@@ -6,6 +6,9 @@ import { ThemeProvider } from '@/components/theme-provider';
 export const metadata: Metadata = {
   title: 'Chit Swe',
   description: 'Portfolio of Chit Swe, a Full Stack Developer.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
