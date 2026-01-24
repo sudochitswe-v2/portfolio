@@ -127,6 +127,15 @@ export const PERSONAL_PROJECTS_DATA = [
   },
   {
     id: 'personal-project-5',
+    title: 'DotBlog Web API',
+    description: 'simple blog app api with .NET 8 best practices and JWT authentication.',
+    technologies: ['.NET 8', 'C#', 'Entity Framework Core', 'MSSQL', 'JWT'],
+    githubUrl: 'https://github.com/sudochitswe-v2/DotBlog',
+    demoUrl: undefined,
+    imageUrl: undefined, // This would be your actual image
+  },
+  {
+    id: 'personal-project-6',
     title: 'Kfitness Web API',
     description: 'A RESTful API for a fitness application that manages user workouts and progress tracking.',
     technologies: ['PHP', 'MariaDb', 'Composer'],
@@ -135,11 +144,20 @@ export const PERSONAL_PROJECTS_DATA = [
     imageUrl: undefined, // This would be your actual image
   },
   {
-    id: 'personal-project-6',
+    id: 'personal-project-7',
     title: 'Kfitness Mobile',
     description: 'A fitness application written in native language that manages user workouts and progress tracking.',
     technologies: ['Kotlin', 'Android Studio', 'Volley'],
     githubUrl: 'https://github.com/sudochitswe-v2/KFitnessMobile',
+    demoUrl: undefined,
+    imageUrl: undefined, // This would be your actual image
+  },
+  {
+    id: 'personal-project-8',
+    title: 'NCC Fitness Tracker )',
+    description: 'A fitness tracker using .NET Framework WinForm Desktop App',
+    technologies: ['.NET Framework', 'C#', 'WinForm', 'MSSQL'],
+    githubUrl: 'https://github.com/sudochitswe-v2/NCCFitnessTracker',
     demoUrl: undefined,
     imageUrl: undefined, // This would be your actual image
   }

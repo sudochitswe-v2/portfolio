@@ -2,6 +2,8 @@ import { PERSONAL_PROJECTS_DATA } from '@/lib/data';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
+import { SiGithub } from '@icons-pack/react-simple-icons';
+import { ExternalLinkIcon } from 'lucide-react'
 
 type PersonalProjectCardProps = {
     title: string;
@@ -49,13 +51,15 @@ export function PersonalProjectCard({
                     ))}
                 </div>
                 <div className="flex gap-3">
+                    {/* <SiGithub color="currentColor" size={20} /> */}
                     <a
                         href={githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center rounded-md border px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                     >
-                        GitHub
+                        <SiGithub className="mr-2" size={20} />
+                        <span>GitHub</span>
                     </a>
                     {demoUrl && (
                         <a
@@ -64,7 +68,8 @@ export function PersonalProjectCard({
                             rel="noopener noreferrer"
                             className="inline-flex items-center rounded-md border px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                         >
-                            Live Demo
+                            <ExternalLinkIcon className="mr-2" size={20} />
+                            <span>Live</span>
                         </a>
                     )}
                 </div>
