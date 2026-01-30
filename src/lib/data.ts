@@ -9,6 +9,7 @@ export const PROFILE_DATA = {
   socialLinks: {
     linkedin: 'https://www.linkedin.com/in/sudochitswe',
     github: 'https://github.com/sudochitswe-v2',
+    mastodon: "https://burma.social/@sudo_chitswe",
   },
 };
 
@@ -154,7 +155,7 @@ export const PERSONAL_PROJECTS_DATA = [
   },
   {
     id: 'personal-project-8',
-    title: 'NCC Fitness Tracker )',
+    title: 'NCC Fitness Tracker',
     description: 'A fitness tracker using .NET Framework WinForm Desktop App',
     technologies: ['.NET Framework', 'C#', 'WinForm', 'MSSQL'],
     githubUrl: 'https://github.com/sudochitswe-v2/NCCFitnessTracker',
